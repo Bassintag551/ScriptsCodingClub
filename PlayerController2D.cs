@@ -93,4 +93,11 @@ public class PlayerController2D : MonoBehaviour {
             velY = 0;
         transform.position = new Vector3(position.x + velX, position.y + velY, position.z); // Modifie la position  du joueur
     }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(new Vector3(transform.position.x + (maxPos.x + minPos.x) / 2, transform.position.y + (maxPos.y + minPos.y) / 2),
+                            new Vector3(maxPos.x - minPos.x, maxPos.y - minPos.y));
+    }
 }
