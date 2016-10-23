@@ -20,7 +20,7 @@ public class PlayerController2D : MonoBehaviour {
     public float        cooldown = 1f;
 
     // Représente la valeur minimale du joystick pour que le joueur bouge
-    public float inputThreshold = 0.5f;
+    public float        inputThreshold = 0.5f;
 
     // Compte le temps écoulé depuis le dernier tir
     public float        shooterCooldown { private set; get; }

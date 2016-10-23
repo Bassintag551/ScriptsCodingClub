@@ -10,7 +10,7 @@ public class ProjectileController : MonoBehaviour {
     public Vector2  speed = new Vector2(10f, 0f);
 
     // Cette fonction se lance à chaque frame
-    void FixedUpdate()
+    void            FixedUpdate()
     {
         Vector3     relativeSpeed;                                                  // Représente la vitesse du projectile relativement au temps écoulé depuis la dernière frame
 
